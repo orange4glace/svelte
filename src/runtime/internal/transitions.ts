@@ -276,6 +276,7 @@ export function create_bidirectional_transition(node: Element & ElementCSSInline
 		if (running_program) {
 			pending_program = program;
 		} else {
+			pending_program = null;
 			// if this is an intro, and there's a delay, we need to do
 			// an initial tick and/or apply CSS animation immediately
 			if (css) {
